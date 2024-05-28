@@ -1,15 +1,19 @@
 import { FaFacebookF, FaGithub, FaGoogle } from "react-icons/fa";
 import useAuth from "../../Hooks/useAuth";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const SocialBtn = () => {
   const { googleLogin } = useAuth();
+  const location = useLocation()
+  const navigate = useNavigate()
   const handleGoogleSignUp = () => {
     googleLogin()
     .then((res) => {
-    //   const userInfo = {
-    //     email: res?.user?.email,
-    //     name: res?.user?.displayName,
-    //   };
+      const userInfo = {
+        email: res?.user?.email,
+        name: res?.user?.displayName,
+      };
+      (navigate(location?.state?.from.pathname || "/"))
     });
   };
   return (

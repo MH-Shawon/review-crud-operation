@@ -1,14 +1,15 @@
 import { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   
-    const { user, logout, } = useAuth();
+    const { user, logout } = useAuth();
     const handleLogOut=()=>{
         logout()
             .then(result => {
+              console.log(result);
 
             }).
             catch(error => {

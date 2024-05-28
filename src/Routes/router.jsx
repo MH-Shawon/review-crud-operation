@@ -12,6 +12,7 @@ import UpdateProduct from "../Pages/Dashboard/Update/UpdateProduct";
 import SignIn from "../Pages/Authentication/SignIn/SignIn";
 import SignUp from "../Pages/Authentication/SignUp/SignUp";
 import Error from "../Pages/ErrorPage/Error";
+import PvtRoute from "./PvtRoute/PvtRoute";
 
 const router = createBrowserRouter([
   {
@@ -38,7 +39,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboardLayout",
-    element: <DashboardLayouts />,
+    element: <PvtRoute><DashboardLayouts /></PvtRoute>,
     children: [
       {
         path: "/dashboardLayout/dashboard",

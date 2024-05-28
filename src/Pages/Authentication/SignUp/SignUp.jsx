@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { FaEnvelope, FaEye, FaEyeSlash, FaUser } from "react-icons/fa";
 import styles from "./SignUp.module.css";
@@ -7,8 +7,10 @@ import SocialBtn from "../../../components/SocialBtn/SocialBtn";
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
+  
   const [error, setRegisterError] = useState(false);
   const { register, updateUser } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handlePasswordChange = (e) => {
     const password = e.target.value;
@@ -29,11 +31,15 @@ const SignUp = () => {
     const password = form.password.value;
     console.log(name, email, password);
 
-    register(email, password).then((result) => {
-      setRegisterError("");
+    register(email, password)
+    .then((result) => {
+      
       const loggedUser = result.user;
       console.log(loggedUser);
+      setRegisterError("");
+      navigate("/");
       return updateUser(name);
+      
     });
   };
 
@@ -54,7 +60,7 @@ const SignUp = () => {
                     placeholder="User Name"
                   />
                   <FaUser
-                    className={`absolute top-[25px] text-white right-6`}
+                    className={`absolute top-[25px] text-white right-6 text-xl`}
                   />
                 </div>
 
@@ -68,7 +74,7 @@ const SignUp = () => {
                     required
                   />
                   <FaEnvelope
-                    className={`absolute top-[25px] text-white right-6`}
+                    className={`absolute top-[25px] text-white right-6 text-xl`}
                   />
                 </div>
 
@@ -82,7 +88,7 @@ const SignUp = () => {
                     required
                     onChange={handlePasswordChange}
                   />
-                  <p className={`absolute top-[25px] text-white right-6`}>
+                  <p className={`absolute top-[25px] text-white right-6 text-xl`}>
                     {showPassword ? (
                       <FaEyeSlash
                         onClick={() => {
