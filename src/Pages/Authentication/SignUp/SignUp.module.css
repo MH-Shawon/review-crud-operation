@@ -1,0 +1,255 @@
+/* SignIn.module.css */
+.bg {
+  background: url('/src/assets/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: transparent;
+  width: 530px;
+  height: 500px;
+  perspective: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.boxLogin,
+.boxSignup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.boxLogin {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  position: absolute;
+}
+
+.boxLogin h1 {
+  letter-spacing: 2px;
+}
+
+.boxSignup h1 {
+  padding-top: 5px;
+  letter-spacing: 2px;
+}
+
+.boxLogin ul {
+  padding: 16px;
+}
+
+.boxSignup ul {
+  padding: 8px;
+}
+
+.boxLogin .inpt {
+  width: 27rem;
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  margin: 12px;
+  background: transparent;
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.btn {
+  height: 3.2rem;
+  width: 27rem;
+  margin: 15px 15px 0 15px;
+  padding: 10px;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
+  background: white;
+  color: black;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-0.4rem);
+}
+
+.boxLogin form a {
+  text-decoration: none;
+  color: white;
+  padding-left: 150px;
+  font-size: 1rem;
+}
+
+label {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.boxSignup {
+  color: white;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  position: absolute;
+}
+
+.box input {
+  color: white;
+  border-radius: 0px;
+  border: 1px solid white;
+}
+
+.box input:focus {
+  border: 2px solid cyan;
+}
+
+.boxSignup .inpt {
+  width: 27rem;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  margin: 10px;
+  background: transparent;
+  transition: 0.5s ease;
+  outline: none;
+}
+
+.boxSignup form a {
+  text-align: right;
+  text-decoration: none;
+  color: white;
+  padding-left: 155px;
+  font-size: 1rem;
+}
+
+form a:active {
+  color: blueviolet;
+}
+
+.boxLogin .registerLink {
+  font-size: 1rem;
+  padding-bottom: 15px;
+  font-style: italic;
+}
+
+.boxSignup .registerLink {
+  font-size: 1rem;
+  padding-bottom: 30px;
+  font-style: italic;
+}
+
+.registerLink a {
+  color: blueviolet;
+  transition: 0.5s ease;
+}
+
+.registerLink a:active {
+  color: blue;
+}
+
+.registerLink a:hover {
+  color: red;
+  transform: scale(1.5);
+}
+
+.emailLogin i {
+  position: absolute;
+  top: 11rem;
+  right: 3.5rem;
+  cursor: pointer;
+}
+
+.passwordLogin i {
+  position: absolute;
+  right: 3.5rem;
+  top: 16.4rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.userSignup i {
+  position: absolute;
+  right: 3.8rem;
+  top: 8.7rem;
+  cursor: pointer;
+}
+
+.emailSignup i {
+  top: 13.3rem;
+  position: absolute;
+  right: 3.6rem;
+  cursor: pointer;
+}
+
+.passwordSignup i {
+  top: 17.9rem;
+  position: absolute;
+  right: 3.7rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+@media (max-width: 480px) {
+  .box {
+    width: 90%;
+  }
+
+  .box .inpt {
+    width: 85%;
+    font-size: 90%;
+  }
+
+  .box form a {
+    padding-left: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .boxLogin ul {
+    padding: 5px;
+  }
+
+  .btn {
+    width: 80%;
+  }
+}

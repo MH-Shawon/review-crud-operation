@@ -1,0 +1,101 @@
+{
+  "shoes": [
+    {
+      "id": "2",
+      "title": "UltraBoost 21",
+      "brand": "Adidas",
+      "price": 180,
+      "description": "High-performance running shoe with Boost cushioning technology.",
+      "image_url": "https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/g1ljiszo4qhthfpluzbt/nike-joyride.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Fresh Foam 1080v11",
+      "brand": "New Balance",
+      "price": 150,
+      "description": "Premium cushioning and flexibility for ultimate running comfort.",
+      "image_url": "https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/g1ljiszo4qhthfpluzbt/nike-joyride.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Gel-Nimbus 23",
+      "brand": "ASICS",
+      "price": 150,
+      "description": "Cushioned running shoe ideal for neutral runners.",
+      "image_url": "https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/g1ljiszo4qhthfpluzbt/nike-joyride.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Pegasus 38",
+      "brand": "Nike",
+      "price": 120,
+      "description": "Reliable running shoe with responsive cushioning.",
+      "image_url": "https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/g1ljiszo4qhthfpluzbt/nike-joyride.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Clifton 7",
+      "brand": "Hoka One One",
+      "price": 140,
+      "description": "Lightweight running shoe with plush cushioning.",
+      "image_url": "https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/g1ljiszo4qhthfpluzbt/nike-joyride.jpg"
+    },
+    {
+      "id": "9",
+      "title": "FuelCell TC",
+      "brand": "New Balance",
+      "price": 200,
+      "description": "High-speed racing shoe with innovative FuelCell technology.",
+      "image_url": "https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/g1ljiszo4qhthfpluzbt/nike-joyride.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Metcon 6",
+      "brand": "Nike",
+      "price": 130,
+      "description": "Versatile training shoe for cross-training and lifting.",
+      "image_url": "https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/g1ljiszo4qhthfpluzbt/nike-joyride.jpg"
+    },
+    {
+      "id": "99ac",
+      "name": "jersy",
+      "category": "adidas",
+      "price": 345,
+      "title": "jumping",
+      "brand": "salomon",
+      "Details": "This is superb jumping shoes for random use"
+    },
+    {
+      "id": "99",
+      "name": "barca",
+      "brand": "new balance",
+      "price": 34,
+      "Details": "wewew",
+      "image": "https://i.ibb.co/RbCfZHL/Screenshot-at-2024-02-08-00-47-08.png"
+    },
+    {
+      "id": "12",
+      "title": "vfgdfd",
+      "brand": "adidas",
+      "price": 1223,
+      "Details": "vgfgdfg",
+      "image": "https://i.ibb.co/8Mb9PFv/1-Mh-Shawon-Facebook.png"
+    },
+    {
+      "id": "6",
+      "title": "dcfgf",
+      "brand": "adidas",
+      "price": 34,
+      "Details": "dfddd",
+      "image": "https://i.ibb.co/1JN9m7B/144530.jpg"
+    },
+    {
+      "id": "150",
+      "title": "baca",
+      "brand": "asics",
+      "price": 129,
+      "Details": "this ish something",
+      "image": "https://i.ibb.co/1myvrNX/010afc434817659c179f3e22eb6832f5.jpg"
+    }
+  ]
+}
